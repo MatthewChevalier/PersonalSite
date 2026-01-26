@@ -8,9 +8,9 @@ Sito web personale sviluppato per mostrare il proprio portfolio e creare una vet
 - JavaScript
 
 ## *🚀 Funzionalità*
--Visualizzazione dei progetti del portfolio con descrizione e immagini.
--Sezione “Chi sono” per presentarsi professionalmente.
--Modulo di contatto funzionante.
+- Visualizzazione dei progetti del portfolio con descrizione e immagini.
+- Sezione “Chi sono” per presentarsi professionalmente.
+- Modulo di contatto funzionante.
 
 
 ## *🌐 Link del Sito*
@@ -20,6 +20,7 @@ Sito web personale sviluppato per mostrare il proprio portfolio e creare una vet
 
 ## *👤 Autore*
 Mattia Cavaliere - [MatthewChevalier](https://github.com/MatthewChevalier)
+
 
 
 
