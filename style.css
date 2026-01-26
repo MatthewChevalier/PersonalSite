@@ -1,0 +1,226 @@
+body {
+  background-image: url("/PersonalSite/assets/img/sfondo-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .nav-link.active {
+  font-weight: bold;
+}
+
+.sfondo.hero {
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sfondo.hero .titolo {
+  font-weight: bold;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #000;
+  text-align: center;
+  max-width: 90vw;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+.sfondo.hero .name {
+  font-size: clamp(4rem, 10vw, 9rem);
+  max-width: 90vw;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
+.cards-section {
+  margin-bottom: 120px;
+}
+.cards-section .card {
+  height: auto;
+  max-width: 18rem;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cards-section .card .card-img-top {
+  max-height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cards-section .card .card-body {
+  padding: 0rem;
+  display: flex;
+}
+.cards-section .card .card-body .btn {
+  flex: 1;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+}
+.contact-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.contact-section label {
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.social .social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(60px, 15vw, 100px);
+  height: clamp(60px, 15vw, 100px);
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+.social .social-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.social .social-btn .social-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: block;
+}
+
+.portfolio-page h1 {
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+  font-weight: bold;
+  font-size: 4rem;
+  width: 100%;
+  margin: 30px auto;
+}
+.portfolio-page .carousel-info-btn {
+  display: block;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 1920px;
+  text-align: center;
+}
+.portfolio-page .carousel-custom {
+  height: 700px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  aspect-ratio: 1920/600;
+  position: relative;
+}
+.portfolio-page .carousel-custom .carousel-inner,
+.portfolio-page .carousel-custom .carousel-item {
+  height: 100%;
+}
+.portfolio-page .carousel-custom .carousel-inner img,
+.portfolio-page .carousel-custom .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.cv-page .card {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cv-page .title {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  font-weight: bold;
+  font-size: 4rem;
+  width: 100%;
+  margin: 20px auto;
+}
+.cv-page .card-title-me {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.cv-page .card-header {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.cv-page .progress {
+  background-color: black;
+  width: 60%;
+  margin: 0 auto;
+}
+.cv-page .edu-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+.cv-page .edu {
+  text-align: center;
+  width: 16rem;
+  min-height: 26rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.cv-page .edu img {
+  height: 15rem;
+  object-fit: cover;
+}
+.cv-page .edu .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
